@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+  <head>
+    <meta name="Author" content="Georges-Edouard Berenger">
+    <title>Mosaic's Notice</title>
+  </head>
+
+  <body bgcolor="#FFFFFF">
+    <font FACE="Humnst777 BT, Arial, Helvetica">
+    <h1><font color="#1822CD"><font size="+4">Mosaic's Notice</font></font></h1>
+    &copy;2000, <a href="mailto:berenger@francenet.fr">Georges-Edouard Berenger</a>, berenger@francenet.fr <br>
+    &copy;2000, <a href="mailto:frank@diematie.sun.ac.za">Frank Olivier</a>, frank@diematie.sun.ac.za <br>
+     Hamburg, 13th November, 2000. 
+
+    <h3><font color="#1822CD">What is Mosaic?</font></h3>
+     Mosaic creates a mosaic reproduction of any picture using frames captured live from your TV input card.
+     <p>Here is an example picture below. The left part is the source image, the right part, the reconstructed image
+     using random TV frames (clic on the image to see it at its normal size).
+    <p><center>
+      <a href="Example.png"><IMG SRC="Example.png" ALT="Mosaic Example" WIDTH="512" HEIGHT="335" BORDER="2"><a>
+    </center></p>
+ 
+     <br>The goal is purely artistic. Try it on different type of images, with different TV programs.
+     Let the program work for long for better results.
+
+ 	<h3><font color="#1822CD">Requirement</font></h3>
+ 	For obvious reasons, you will need a TV capture card supported by BeOS R5 (with or without third party drivers).
+ 	<br>It is not required, but it will be handy for you to also have <a href="http://www.bebits.com/app/907">stampTV</a>
+ 	to create TV channel presets.
+ 	<h3><font color="#1822CD">Who is the author?</font></h3>
+	Mosaic was first written by <a href="mailto:frank@diematie.sun.ac.za">Frank Olivier</a>, who made the source public.
+	Because he of his studies (that's what he says... :-), he didn't have the time to make more
+	improvements to the original version, so when I sent him back some improvements, he immediately
+	requested that I take over the program.
+	<br>Since the first version, the main algorithm hasn't changed much in what it does, but has quite
+	evolved in the way it does it. I have mainly worked on the user interface.
+	
+	<h3><font color="#1822CD">How does it work?</font></h3>
+	Select an image that you want to reproduce with as a mosaic, and select "Start Processing", and wait that
+	the result image pleases you. Then select "Save" to save that result image on your disk!
+
+    <p>Here is a quick overview of Mosaic's features as found in the menu bar:</p>
+
+    <ul>
+      <li><font color="#1822CD"><b><i>Open Source Image...</i></b></font>
+      <br>
+      Opens a file selector to allow you to select the image you want to reproduce.
+      You can also simple drag'n drop an image on Mosaic's main window.
+	</li>
+      <li><font color="#1822CD"><b><i>Reload Source Image</i></b></font>
+      <br>You can apply some filtering effects to the source image, therefore, you may want to revert to the original
+      picture. This item does just that.</li>
+
+      <li><font color="#1822CD"><b><i>Select Result Image...</i></b></font>
+      <br>You can resume work on an image: for that, first select the original image with the previous methods, then use
+      this menu item to select the resulting image you want to continue to work on.
+      <br>You can also drag'n drop a result image directly in the window. If some source image is already loaded, then
+      if the dragged image has the same size as the source image, you will be able to tell if the newly dragged image should be
+      used as a source image or as a result image to continue.</li>
+
+      <li><font color="#1822CD"><b><i>Reload result image</i></b></font>
+      <br>You can also apply some filters to the result image, or you may want simply to revert to the result image
+      which is stored on your disk. Use this option then.</li>
+
+      <li><font color="#1822CD"><b><i>Start Processing/Stop Processing</i></b></font>
+      <br>Those options are self explanatory.</li>
+
+      <li><font color="#1822CD"><b><i>Save Result/Save Result As.../Quit</i></b></font>
+      <br>Do what you'd expect...</li>
+
+      <li><font color="#1822CD"><b><i>View Source/View Result</i></b></font>
+      <br>Select which image you want to see.</li>
+
+      <li><font color="#1822CD"><b><i>Blur this Image just a Little/Blur this Image/Blur this Image More</i></b></font>
+      <br>Will apply some blurring effect to the image currently displayed. You can't undo this operation,
+      but files on disk are not touched. In other words, if your image is not saved on disk, you won't be able
+      to recover the original image...
+      <br>Blurring the source image might help Mosaic a little bit, while blurring the result image will help
+      remove the unpleasant edges of the mosaic. It is a taste question, to use it if/how you wish!</li>
+
+      <li><font color="#1822CD"><b><i>Monitor</i></b></font>
+      <br>Will allow to show/hide a monitor window showing the current TV image captured. Note that this image is the
+      pure video source from which is extracted the picture that will be used. That extracted picture is usually much
+      smaller, with possibly blur effects & cut borders.
+      <br>It will help you to select the best TV program for your work.</li>
+
+      <li><i><font color="red">If you have used</font></i> <a href="http://www.bebits.com/app/907">stampTV</a>
+      <i><font color="red">to create named channel presets</font></i>, then you will have more useful
+      menu items in the TV menu. The presets read from stampTV's preference file will be made available allowing
+      you to change TV channel while working. The shortcuts Alt-'+' and Alt-'-' will allow you to change the channel quickly.
+      </li>
+      
+      <li><font color="#1822CD"><b><i>Clic on any part of the result image</i></b></font>
+      <br>That will tell Mosaic that you are not happy with the frame you have selected, and Mosaic will replace it
+      with some other frame.
+      </li>
+
+      <li>That's it!</li>
+    </ul>
+
+    <h3><font color="#1822CD">License</font></h3>
+    This software is an open source freeware. 
+
+    <p><b><font color="#ED181E">The authors make no warranties, express or implied, including
+    without limitation the implied warranties of merchandability and fitness for any particular
+    purpose, regarding this software. The authors do not warrant, guarantee or make any
+    representations regarding the use or the results of the use of the software in terms of its
+    correctness, accuracy, reliability, currentness or otherwise. The entire risk as to the results
+    and performance of the software is assumed by you.</font></b></p>
+
+    <p>I'll be glad to hear about your bug reports, problems, comments, flames...<br>
+     You can mail us directly : <a href="mailto:berenger@francenet.fr">Georges-Edouard Berenger</a>
+     (current maintainer &amp; now main contributor)
+     or <a href="mailto:frank@diematie.sun.ac.za">Frank Olivier</a> (the original author).</p>
+     
+     <p>Mosaic is provided with source code for anyone to play with. If you want to contribute
+     with any improvement or bug fix, please let us know!
+     We will see if it makes sence for the official distribution.
+
+    <h3><font color="#1822CD">Known bugs &amp; problems</font></h3>
+
+    <ul>
+      <li>If you can't select the image sizes, or which section of the TV image will extracted, or
+      which algorithm will be used without editing the source code and recompiling the program.</li>
+    </ul>
+
+    <h3><font color="#1822CD">History</font></h3>
+
+    <h4>v2.0 (November 13th, 2000)</h4>
+
+    <ul>
+      <li>Maintenance now done by Geb.</li>
+      <li>Cleaned up the source code. Removed many bugs & limitations.</li>
+      <li>Added many UI features. Basically, the first release was a working prototype.
+      This release is now a much more polished product with many options.</li>
+      <ul>
+      <li>Implemented/fixed the file menu items. Added intelligent file selector functions like:
+      when you do a first "Save Result" or a "Save Result As", a new name will be derived from the
+      source's name and the file panel will be opened in the folder where that image is.</li>
+      <li>Added alternative drag'n drop support to open images.</li>
+      <li>Added image filtering functions.</li>
+      <li>Added monitoring.</li>
+      <li>Added stampTV presets' support.</li>
+      <li>Sped up the code dramatically.</li>
+      </ul>
+    </ul>
+
+    <h4>v1.0 (October 16th, 2000)</h4>
+
+    <ul>
+      <li>Original release by Frank Olivier.</li>
+    </ul>
+  </font>
+  </body>
+</html>
+
